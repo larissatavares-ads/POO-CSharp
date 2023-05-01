@@ -3,13 +3,21 @@
 var iesUFRA = new Instituicao()
 {
     Nome = "UFRA",
-    Endereco = "Perimetral"
+    Endereco = new Endereco()
+    {
+        Rua = "Perimetral",
+        Bairro = "Terra firme",
+        Numero = "1000"
+    }
 };
 
 var iesIFPA = new Instituicao() 
 {
     Nome = "IFPA",
-    Endereco = "Almirante Barroso"
+    Endereco = new Endereco()
+    {
+        Bairro = "Marco"
+    }
 };
 
 var dptoEnsino = new Departamento("Computação");
